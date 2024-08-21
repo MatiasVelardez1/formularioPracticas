@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>i12</title>
 </head>
+
 <body>
-    
+
     <!-- formlario de html
      
         un select
@@ -21,35 +23,26 @@
         <h1>Contacto</h1>
         <div class="input-group">
             <input type="text" name="name" placeholder="Nombre" required>
-            <input type="tel" name="phone" placeholder="Teléfono" required>
-            <input type="email" name="email" placeholder="Email" required>
-            
-            <label for="album-select">¿Cuál es tu álbum favorito de YSY A?</label>
-            <select id="album-select" name="album">
-                <option value="Antezana 247">Antezana 247</option>
-                <option value="Hecho a Mano">Hecho a Mano</option>
-                <option value="Trap de Verdad">Trap de Verdad</option>
-                <option value="YSYSMO">YSYSMO</option>
-                <option value="After del After">After del After</option>
+            <input type="text" name="last name" placeholder="Apellido" required>
+            <input type="number" name="dni" placeholder="DNI" required>
+
+
+            <select name="gender" id="gender" required>
+                <option value="" disabled selected>Seleccione su género</option>
+                <option value="male">Masculino</option>
+                <option value="female">Femenino</option>
+                <option value="other">Otro</option>
             </select>
-            
-            <label>¿Cuál es tu Rapero Favorito?</label>
-            <label for="ysy-a">
-                <input type="radio" id="ysy-a" name="singer" value="YSY A">YSY A
-            </label>
-            <label for="duki">
-                <input type="radio" id="duki" name="singer" value="Duki">Duki
-            </label>
-            <label for="neo-pistea">
-                <input type="radio" id="neo-pistea" name="singer" value="Neo Pistea">Neo Pistea
-            </label>
-            
-            <textarea name="message" cols="38" rows="5" placeholder="Escribe un Mensaje"></textarea>
-    
+
+
+
+            <textarea name="message" cols="38" rows="5" placeholder="Dejanos tu consulta"></textarea>
+
             <input class="btn" type="submit" value="Enviar">
         </div>
     </form>
 
-    
+
 </body>
+
 </html>
